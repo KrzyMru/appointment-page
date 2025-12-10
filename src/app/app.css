@@ -1,0 +1,29 @@
+main {
+  padding: 32px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  align-self: center;
+
+  border: none;
+  background-color: rgb(86, 238, 99);
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(67, 180, 77);
+  }
+}
+
+main .appointment__table {
+  width: 100%;
+}
