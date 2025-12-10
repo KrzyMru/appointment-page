@@ -57,3 +57,11 @@
         background-color: rgb(67, 180, 77);
     }
 }
+
+.appointment__submit--disabled {
+    background-color: rgb(201, 201, 201);
+    &:hover {
+        cursor: default;
+        background-color: rgb(201, 201, 201);
+    }
+}

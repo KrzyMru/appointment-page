@@ -40,6 +40,9 @@ const NewAppointmentDialog = (props: NewAppointmentDialogProps) => {
         return false;
     }
 
+    const anyErrors = errors.customerName || errors.date || errors.end || errors.notes || errors.service || errors.start || errors.status 
+        ? true : false;
+
     return (
         <BaseDialog
             isOpen={isOpen}
@@ -151,7 +154,8 @@ const NewAppointmentDialog = (props: NewAppointmentDialogProps) => {
                     <button 
                         type="submit" 
                         title="Book this appointment"
-                        className="appointment__submit"
+                        className={`appointment__submit ${anyErrors ? 'appointment__submit--disabled' : ''}`}
+                        disabled={anyErrors}
                     >
                         Book this appointment
                     </button>
