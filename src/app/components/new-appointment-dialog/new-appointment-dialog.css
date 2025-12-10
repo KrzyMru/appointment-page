@@ -1,0 +1,59 @@
+.appointment__panel {
+    min-width: 400px;
+    border-radius: 12px;
+    padding: 32px;
+    box-sizing: border-box;
+
+    background-color: white;
+
+    @media screen and (max-width: 420px) {
+        min-width: 200px;
+        width: 100%;
+    }
+}
+
+.appointment__panel form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointment__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.appointment__label {
+    width: fit-content;
+    font-weight: 700;
+}
+
+.appointment__input {
+    border-radius: 12px;
+    padding: 12px;
+
+    border: 1px solid gray;
+}
+
+.appointment__error {
+    color: red;
+    font-size: small;
+}
+
+.appointment__submit {
+    width: fit-content;
+    padding: 12px;
+    border-radius: 12px;
+    align-self: flex-end;
+
+    border: none;
+    background-color: rgb(86, 238, 99);
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(67, 180, 77);
+    }
+}
