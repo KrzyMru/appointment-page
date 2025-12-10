@@ -1,0 +1,24 @@
+.appointment__table {
+    border-collapse: collapse;
+    text-align: left;
+    position: relative;
+
+    border: 2px solid gray;
+}
+
+.appointment__table caption {
+    padding: 12px;
+}
+
+.appointment__table thead tr th {
+    padding: 8px;
+
+    color: white;
+    background-color: rgb(32, 32, 56);
+}
+
+.appointment__table tbody tr td {
+    padding: 8px;
+    
+    border: 1px solid gray;
+}
