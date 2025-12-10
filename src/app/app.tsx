@@ -34,7 +34,12 @@ const App = () => {
       >
         + Book Appointment
       </button>
-      <AppointmentTable appointments={appointments} />
+      {
+        appointments.length === 0 ?
+        <span className='appointments__empty'>No appointments yet</span>
+        :
+        <AppointmentTable appointments={appointments} />
+      }
       <NewAppointmentDialog 
         isOpen={showDialog}
         onClose={() => setShowDialog(false)}

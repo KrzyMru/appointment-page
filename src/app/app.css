@@ -27,3 +27,9 @@ main button {
 main .appointment__table {
   width: 100%;
 }
+
+.appointments__empty {
+  padding: 40px;
+  
+  align-self: center;
+}
