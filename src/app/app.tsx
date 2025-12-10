@@ -19,7 +19,7 @@ const App = () => {
   const [showDialog, setShowDialog] = useState<boolean>(false);
 
   const handleAddAppointment = (appointment: NewAppointmentFormInputs) => {
-    setAppointments([...appointments, {...appointment, id: ''}]);
+    setAppointments([...appointments, {...appointment, id: appointment.date+appointment.start+appointment.end}]);
   }
 
   useEffect(() => {
