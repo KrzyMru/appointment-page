@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "customerName": "Alice Johnson",
+        "date": "2025-09-25",
+        "start": "09:00",
+        "end": "09:30",
+        "service": "Consultation",
+        "status": "confirmed",
+        "notes": ""
+    },
+    {
+        "id": "2",
+        "customerName": "Ben Smith",
+        "date": "2025-09-25",
+        "start": "09:30",
+        "end": "10:00",
+        "service": "Therapy",
+        "status": "pending",
+        "notes": "First visit"
+    }
+]
